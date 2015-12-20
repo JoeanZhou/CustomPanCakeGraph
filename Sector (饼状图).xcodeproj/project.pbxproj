@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A404801C26752200C953D0 /* DJCustomPanCakeGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */; };
+		63A404811C26752200C953D0 /* DJCustomPanCakeGraphModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4047F1C26752200C953D0 /* DJCustomPanCakeGraphModel.m */; };
 		63D726551C2504340097DD6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726541C2504340097DD6C /* main.m */; };
 		63D726581C2504340097DD6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726571C2504340097DD6C /* AppDelegate.m */; };
 		63D7265B1C2504340097DD6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7265A1C2504340097DD6C /* ViewController.m */; };
@@ -15,9 +17,7 @@
 		63D726631C2504340097DD6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D726611C2504340097DD6C /* LaunchScreen.storyboard */; };
 		63D7266E1C2504340097DD6C /* Sector______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7266D1C2504340097DD6C /* Sector______Tests.m */; };
 		63D726791C2504340097DD6C /* Sector______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726781C2504340097DD6C /* Sector______UITests.m */; };
-		63D726881C2507BA0097DD6C /* DJCustomPanCakeGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726871C2507BA0097DD6C /* DJCustomPanCakeGraph.m */; };
 		63D7268B1C250A470097DD6C /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7268A1C250A470097DD6C /* UIViewAdditions.m */; };
-		63D726A61C2518850097DD6C /* DJCustomPanCakeGraphModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726A51C2518850097DD6C /* DJCustomPanCakeGraphModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63A4047C1C26752200C953D0 /* DJCustomPanCakeGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraph.h; sourceTree = "<group>"; };
+		63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomPanCakeGraph.m; sourceTree = "<group>"; };
+		63A4047E1C26752200C953D0 /* DJCustomPanCakeGraphModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraphModel.h; sourceTree = "<group>"; };
+		63A4047F1C26752200C953D0 /* DJCustomPanCakeGraphModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomPanCakeGraphModel.m; sourceTree = "<group>"; };
 		63D726501C2504340097DD6C /* Sector (饼状图).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sector (饼状图).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D726541C2504340097DD6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63D726561C2504340097DD6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,13 +58,9 @@
 		63D726741C2504340097DD6C /* Sector (饼状图)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sector (饼状图)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D726781C2504340097DD6C /* Sector______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Sector______UITests.m"; sourceTree = "<group>"; };
 		63D7267A1C2504340097DD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63D726861C2507BA0097DD6C /* DJCustomPanCakeGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraph.h; sourceTree = "<group>"; };
-		63D726871C2507BA0097DD6C /* DJCustomPanCakeGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomPanCakeGraph.m; sourceTree = "<group>"; };
 		63D726891C250A460097DD6C /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		63D7268A1C250A470097DD6C /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		63D7268C1C250A550097DD6C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		63D726A41C2518850097DD6C /* DJCustomPanCakeGraphModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraphModel.h; sourceTree = "<group>"; };
-		63D726A51C2518850097DD6C /* DJCustomPanCakeGraphModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomPanCakeGraphModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A4047B1C26752200C953D0 /* DJCustomPanCakeGraph */ = {
+			isa = PBXGroup;
+			children = (
+				63A4047C1C26752200C953D0 /* DJCustomPanCakeGraph.h */,
+				63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */,
+				63A4047E1C26752200C953D0 /* DJCustomPanCakeGraphModel.h */,
+				63A4047F1C26752200C953D0 /* DJCustomPanCakeGraphModel.m */,
+			);
+			path = DJCustomPanCakeGraph;
+			sourceTree = "<group>";
+		};
 		63D726471C2504340097DD6C = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +127,7 @@
 				63D726591C2504340097DD6C /* ViewController.h */,
 				63D7265A1C2504340097DD6C /* ViewController.m */,
 				63D7265C1C2504340097DD6C /* Main.storyboard */,
-				63D726861C2507BA0097DD6C /* DJCustomPanCakeGraph.h */,
-				63D726871C2507BA0097DD6C /* DJCustomPanCakeGraph.m */,
-				63D726A41C2518850097DD6C /* DJCustomPanCakeGraphModel.h */,
-				63D726A51C2518850097DD6C /* DJCustomPanCakeGraphModel.m */,
+				63A4047B1C26752200C953D0 /* DJCustomPanCakeGraph */,
 				63D7265F1C2504340097DD6C /* Assets.xcassets */,
 				63D726891C250A460097DD6C /* UIViewAdditions.h */,
 				63D7268A1C250A470097DD6C /* UIViewAdditions.m */,
@@ -288,11 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D7265B1C2504340097DD6C /* ViewController.m in Sources */,
+				63A404811C26752200C953D0 /* DJCustomPanCakeGraphModel.m in Sources */,
 				63D7268B1C250A470097DD6C /* UIViewAdditions.m in Sources */,
+				63A404801C26752200C953D0 /* DJCustomPanCakeGraph.m in Sources */,
 				63D726581C2504340097DD6C /* AppDelegate.m in Sources */,
 				63D726551C2504340097DD6C /* main.m in Sources */,
-				63D726881C2507BA0097DD6C /* DJCustomPanCakeGraph.m in Sources */,
-				63D726A61C2518850097DD6C /* DJCustomPanCakeGraphModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +526,7 @@
 				63D7267F1C2504340097DD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63D726801C2504340097DD6C /* Build configuration list for PBXNativeTarget "Sector (饼状图)Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				63D726821C2504340097DD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63D726831C2504340097DD6C /* Build configuration list for PBXNativeTarget "Sector (饼状图)UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				63D726851C2504340097DD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
