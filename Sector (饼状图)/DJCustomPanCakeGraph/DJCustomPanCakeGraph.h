@@ -45,6 +45,16 @@ typedef NS_ENUM(NSInteger, CustomPanCakeGraphStyle)
  *  是否显示百分比文字
  */
 @property (nonatomic, assign, readwrite, getter=isShowTipLable) BOOL showTipLable;
+
+/**
+ *  百分比文字颜色(默认跟随扇形颜色)。
+ */
+@property (nonatomic, strong) UIColor *tipLableTextColor;
+/**
+ *  百分比颜色字体 (默认喂系统自带字号)
+ */
+@property (nonatomic, assign) CGFloat tipLableTextFont;
+
 /**
  *  视图样式，默认为饼状图，待扩充
  */

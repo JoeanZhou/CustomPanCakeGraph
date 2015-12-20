@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6347C4081C26B8620094A4E2 /* DJCustomTransformLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347C4071C26B8620094A4E2 /* DJCustomTransformLable.m */; };
 		63A404801C26752200C953D0 /* DJCustomPanCakeGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */; };
 		63A404811C26752200C953D0 /* DJCustomPanCakeGraphModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4047F1C26752200C953D0 /* DJCustomPanCakeGraphModel.m */; };
 		63D726551C2504340097DD6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726541C2504340097DD6C /* main.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6347C4061C26B8620094A4E2 /* DJCustomTransformLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomTransformLable.h; sourceTree = "<group>"; };
+		6347C4071C26B8620094A4E2 /* DJCustomTransformLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomTransformLable.m; sourceTree = "<group>"; };
 		63A4047C1C26752200C953D0 /* DJCustomPanCakeGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraph.h; sourceTree = "<group>"; };
 		63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomPanCakeGraph.m; sourceTree = "<group>"; };
 		63A4047E1C26752200C953D0 /* DJCustomPanCakeGraphModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraphModel.h; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */,
 				63A4047E1C26752200C953D0 /* DJCustomPanCakeGraphModel.h */,
 				63A4047F1C26752200C953D0 /* DJCustomPanCakeGraphModel.m */,
+				6347C4061C26B8620094A4E2 /* DJCustomTransformLable.h */,
+				6347C4071C26B8620094A4E2 /* DJCustomTransformLable.m */,
 			);
 			path = DJCustomPanCakeGraph;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D7265B1C2504340097DD6C /* ViewController.m in Sources */,
+				6347C4081C26B8620094A4E2 /* DJCustomTransformLable.m in Sources */,
 				63A404811C26752200C953D0 /* DJCustomPanCakeGraphModel.m in Sources */,
 				63D7268B1C250A470097DD6C /* UIViewAdditions.m in Sources */,
 				63A404801C26752200C953D0 /* DJCustomPanCakeGraph.m in Sources */,

@@ -58,10 +58,11 @@
 
                                     ];
     
-    self.pancakeGraph.radius = 100;
+    self.pancakeGraph.radius = 80;
     self.pancakeGraph.lineWidth = 0.5;
-    self.pancakeGraph.lableMagin = 10;
+    self.pancakeGraph.lableMagin = 15;
     self.pancakeGraph.showTipLable = YES;
+    self.pancakeGraph.tipLableTextFont = 12.0;
 }
 
 @end

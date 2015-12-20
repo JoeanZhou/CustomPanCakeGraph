@@ -8,6 +8,7 @@
 
 #import "DJCustomPanCakeGraph.h"
 #import "DJCustomPanCakeGraphModel.h"
+#import "DJCustomTransformLable.h"
 #import <objc/runtime.h>
 
 @interface DJCustomPanCakeGraph()
@@ -83,7 +84,7 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
     
     CGAffineTransform  trans = CGAffineTransformMakeTranslation(x, y);
     trans = CGAffineTransformRotate(trans,angle);
-    trans = CGAffineTransformTranslate(trans,-x, -y);
+//    trans = CGAffineTransformTranslate(trans,-x, -y);
     return trans;
 }
 
@@ -93,25 +94,34 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
     CGFloat startAngle = 0, lableStartAngle = 0;
     CGFloat endAngle, lableEndAngle = 0;
     float centerX = self.size.width * 0.5;
-    float centerY = self.size.height * 0.5 - self.lableMagin;
-    float x = self.size.width * 0.5;
-    float y = self.radius * 2 + self.lableMagin;
+    float centerY = self.size.height * 0.5;
+//    float x = self.size.width * 0.5;
+//    float y = self.radius * 2 + self.lableMagin;
     for (int i = 0; i < modelArray.count; i++)
     {
         DJCustomPanCakeGraphModel *dataModel = self.modelArray[i];
        CGFloat percentage = (dataModel.percentage.intValue == 0) ? dataModel.percentage.floatValue * 100 :dataModel.percentage.intValue;
         endAngle = (percentage * 0.5) / 100.0 * M_PI * 2 + lableEndAngle;  //  保证Lable显示在中间
         lableEndAngle = percentage / 100.0 * M_PI * 2 + lableStartAngle;
-        UILabel * lable = [[UILabel alloc] init];
-        lable.text = [NSString stringWithFormat:@"%.f%%", percentage];
-        [lable sizeToFit];
-        lable.left = self.size.width * 0.5 - lable.width * 0.5;
-        lable.top = self.height * 0.5 - self.radius - lable.height * 0.5 - self.lableMagin * 3 / 2;
-        [self addSubview:lable];
         
-        CGAffineTransform trans = GetCGAffineTransformRotateAroundPoint(centerX,centerY, x, y, endAngle);
-        lable.transform = CGAffineTransformIdentity;
-        lable.transform = trans;
+        DJCustomTransformLable * lableView = [[DJCustomTransformLable alloc] init];
+        lableView.width = 2;
+        lableView.height = self.radius + self.lableMagin * 2;
+        lableView.left = (self.width - lableView.width) * 0.5;
+        lableView.bottom = self.height * 0.5;
+        lableView.transformLable.text = [NSString stringWithFormat:@"%.f%%", percentage];
+        lableView.transformLable.textColor = (self.tipLableTextColor != nil) ? self.tipLableTextColor : dataModel.color;
+        lableView.tipView.backgroundColor = lableView.transformLable.textColor;
+        lableView.tipViewHeight = self.lableMagin - 5;
+        lableView.transformLable.font = (self.tipLableTextFont == 0) ? lableView.transformLable.font : [UIFont systemFontOfSize:self.tipLableTextFont];
+        [self addSubview:lableView];
+        
+        lableView.layer.anchorPoint = CGPointMake(0.5, 1);
+        lableView.layer.position = CGPointMake(centerX, centerY);
+        lableView.layer.transform = CATransform3DMakeRotation(endAngle, 0, 0, 1);
+//        CGAffineTransform trans = GetCGAffineTransformRotateAroundPoint(centerX,centerY, x, y, endAngle);
+//        lableView.transform = CGAffineTransformIdentity;
+//        lableView.transform = trans;
         startAngle = endAngle;
         lableStartAngle = lableEndAngle;
     }
