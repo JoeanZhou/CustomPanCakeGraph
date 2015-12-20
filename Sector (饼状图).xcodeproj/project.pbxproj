@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6347C4081C26B8620094A4E2 /* DJCustomTransformLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347C4071C26B8620094A4E2 /* DJCustomTransformLable.m */; };
+		6347C40C1C26C4E10094A4E2 /* 统计图图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 6347C40B1C26C4E10094A4E2 /* 统计图图片.png */; };
 		63A404801C26752200C953D0 /* DJCustomPanCakeGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */; };
 		63A404811C26752200C953D0 /* DJCustomPanCakeGraphModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4047F1C26752200C953D0 /* DJCustomPanCakeGraphModel.m */; };
 		63D726551C2504340097DD6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D726541C2504340097DD6C /* main.m */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		6347C4061C26B8620094A4E2 /* DJCustomTransformLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomTransformLable.h; sourceTree = "<group>"; };
 		6347C4071C26B8620094A4E2 /* DJCustomTransformLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomTransformLable.m; sourceTree = "<group>"; };
+		6347C40B1C26C4E10094A4E2 /* 统计图图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "统计图图片.png"; sourceTree = "<group>"; };
 		63A4047C1C26752200C953D0 /* DJCustomPanCakeGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraph.h; sourceTree = "<group>"; };
 		63A4047D1C26752200C953D0 /* DJCustomPanCakeGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJCustomPanCakeGraph.m; sourceTree = "<group>"; };
 		63A4047E1C26752200C953D0 /* DJCustomPanCakeGraphModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJCustomPanCakeGraphModel.h; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				63D7268C1C250A550097DD6C /* PrefixHeader.pch */,
 				63D726611C2504340097DD6C /* LaunchScreen.storyboard */,
 				63D726641C2504340097DD6C /* Info.plist */,
+				6347C40B1C26C4E10094A4E2 /* 统计图图片.png */,
 				63D726531C2504340097DD6C /* Supporting Files */,
 			);
 			path = "Sector (饼状图)";
@@ -276,6 +279,7 @@
 				63D726631C2504340097DD6C /* LaunchScreen.storyboard in Resources */,
 				63D726601C2504340097DD6C /* Assets.xcassets in Resources */,
 				63D7265E1C2504340097DD6C /* Main.storyboard in Resources */,
+				6347C40C1C26C4E10094A4E2 /* 统计图图片.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
