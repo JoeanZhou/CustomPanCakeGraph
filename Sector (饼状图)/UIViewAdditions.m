@@ -298,6 +298,10 @@ static   UIInterfaceOrientation TTInterfaceOrientation() {
     }
 }
 
+- (void)markBorderWithRandomColor
+{
+    
+}
 @end
 
 
