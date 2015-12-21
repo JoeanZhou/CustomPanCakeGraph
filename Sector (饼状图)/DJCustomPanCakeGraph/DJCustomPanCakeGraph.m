@@ -84,7 +84,7 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
     
     CGAffineTransform  trans = CGAffineTransformMakeTranslation(x, y);
     trans = CGAffineTransformRotate(trans,angle);
-//    trans = CGAffineTransformTranslate(trans,-x, -y);
+    trans = CGAffineTransformTranslate(trans,-x, -y);
     return trans;
 }
 

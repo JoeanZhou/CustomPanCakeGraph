@@ -22,37 +22,28 @@
 
    
     self.pancakeGraph.dataArray = @[@{
-                                        @"percentage" : @(10),
+                                        @"percentage" : @(45),
                                         @"color" : RandomColor
                                         
-                                        },
-                                    @{
-                                        @"percentage" : @(23),
-                                        @"color" : RandomColor
                                         },
                                     @{
                                         @"percentage" : @(15),
                                         @"color" : RandomColor
                                         },
                                     @{
-                                        @"percentage" : @(18),
+                                        @"percentage" : @(8),
                                         @"color" : RandomColor
                                         },
                                     @{
-                                        @"percentage" : @(12),
+                                        @"percentage" : @(4),
                                         @"color" : RandomColor
                                         },
                                     @{
-                                        @"percentage" : @(12),
+                                        @"percentage" : @(20),
                                         @"color" : RandomColor
                                         },
                                     @{
-                                        @"percentage" : @(5),
-                                        @"color" : RandomColor
-                                        },
-
-                                    @{
-                                        @"percentage" : @(5),
+                                        @"percentage" : @(8),
                                         @"color" : RandomColor
                                         }
 
