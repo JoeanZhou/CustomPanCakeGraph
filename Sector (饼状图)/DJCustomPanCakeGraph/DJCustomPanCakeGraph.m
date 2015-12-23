@@ -133,17 +133,24 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
     {
         return;
     }
-    switch (self.graphStyle)
-    {
-        case CustomPanCakeGraphStyleDefalue:
-        {
-            [self CustomPanCakeGraphStyleDefalueEithRect:rect];
-        }
-            break;
-            
-        default:
-            break;
-    }
+//    switch (self.graphStyle)
+//    {
+//        case CustomPanCakeGraphStyleDefalue:
+//        {
+//            [self CustomPanCakeGraphStyleDefalueEithRect:rect];
+//        }
+//            break;
+//        case CustomPanCakeGraphStyleTriangle:
+//        {
+//            [self CustomPanCakeGraphStyleDefalueEithRect:rect];
+//        }
+//            break;
+//            
+//        default:
+//            break;
+//    }
+    [self CustomPanCakeGraphStyleDefalueEithRect:rect];
+    [self CustomTriangleStyle];
 }
 
 - (void)CustomPanCakeGraphStyleDefalueEithRect:(CGRect)rect
@@ -170,6 +177,29 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
         CGContextClosePath(context);
         CGContextDrawPath(context, kCGPathFillStroke);
         startAngle = endAngle;
+    }
+}
+
+- (void)CustomTriangleStyle
+{
+    NSArray * arr = @[@200,@100,@150,@170,@120,];
+    for (int i =0; i < [arr count]; i++)
+    {
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 230, 50, 200)];
+        CGSize size = CGSizeMake(50, 200);
+        
+        CAShapeLayer *layer = [CAShapeLayer layer];
+        UIBezierPath *bezier = [UIBezierPath bezierPath];
+        
+        [bezier moveToPoint:CGPointMake(size.width *i, size.height)];
+        [bezier addLineToPoint:CGPointMake((size.width *i) + (size.width /2), 200 - [arr[i] integerValue])];
+        [bezier addLineToPoint:CGPointMake((size.width *i) + (size.width), size.height)];
+        
+        layer.path = bezier.CGPath;
+        layer.fillColor = RandomColor.CGColor;
+        
+        [view.layer addSublayer:layer];
+        [self addSubview:view];
     }
 }
 

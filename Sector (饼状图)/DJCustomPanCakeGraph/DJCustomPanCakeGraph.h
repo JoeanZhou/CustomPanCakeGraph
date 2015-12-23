@@ -20,7 +20,8 @@
 
 typedef NS_ENUM(NSInteger, CustomPanCakeGraphStyle)
 {
-    CustomPanCakeGraphStyleDefalue
+    CustomPanCakeGraphStyleDefalue,
+    CustomPanCakeGraphStyleTriangle
 };
 
 @interface DJCustomPanCakeGraph : UIView
