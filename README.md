@@ -12,4 +12,4 @@
 */
 
 
-![image](https://github.com/JoeanZhou/CustomPanCakeGraph/blob/master/Sector%20(饼状图)/统计图图片.png)
+![image](https://github.com/JoeanZhou/CustomPanCakeGraph/blob/master/Sector%20(饼状图)/Snip20151223_42.png)
